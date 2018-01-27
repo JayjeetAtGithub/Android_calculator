@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#29434e"
+    android:orientation="vertical"
+    tools:context="calc.glug.jc.com.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9"
+        android:fontFamily="sans-serif-light"
+        android:gravity="right|bottom"
+        android:maxLines="2"
+        android:textColor="#fff"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.65"
+        android:fontFamily="@font/font2"
+        android:gravity="center_vertical|right"
+        android:maxLines="2"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textSize="60sp"
+        android:textColor="#fff"
+        tools:text="0"
+        android:text="0"/>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
